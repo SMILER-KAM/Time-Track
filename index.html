@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP WATCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+    body {
+        background-image: url('bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        color:white;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container text-center mt-2">
+        <h1>STOP WATCH</h1>
+        <div class="btn-group mt-2" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-danger" id="btn1" onclick="start_timer()">Start</button>
+            <button type="button" class="btn btn-warning" id="btn2" onclick="resume_timer()">Pause/Resume</button>
+            <button type="button" class="btn btn-success" id="btn3" onclick="clear_timer()">Clear</button>
+        </div>
+        <div id="result" class="container text-center mt-2">
+            <h1>00:00</h1>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
